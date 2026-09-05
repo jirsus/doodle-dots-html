@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background: #2A5AAe;
+}
+
+.title-header {
+    margin: 15px 15px 0 0;
+    max-width: 100%;
+    background-color: #ffffff;
+    padding:30px;
+    font-family: IBM Plex Mono;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 8px;
+}
+
+/* WHOLE BOARD */
+.gallery {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* ALL IMAGES */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* TWO PHOTOS SIDE BY SIDE */
+.banner {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* PHONE */
+@media (max-width: 700px) {
+    .gallery {
+        width: 92%;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+    }
+}
+
+.portrait-gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.portrait-gallery img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.ending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 15px 0 0;
+    max-width: 100%;
+    background-color: #ffffff;
+    padding:30px;
+    font-family: IBM Plex Mono;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 8px;
+
+}
+
+.download {
+    border: 0;
+    border-radius: 12px;
+    padding:15px;
+    font-family: "IBM Plex Mono", monospace;
+    outline: 0;
+    background: #FBA221;
+}
+
+.download:hover {
+    border: 0;
+    border-radius: 12px;
+    padding:15px;
+    font-family: "IBM Plex Mono", monospace;
+    outline: 0;
+    background: #842A8a;
+}
